@@ -87,3 +87,7 @@ Perform a diff between two files.
 ```sh
 code --diff <file1> <file2>
 ```
+
+### Extensions
+
+- [markdownlinter](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): Markdown/CommonMark linting and style checking
