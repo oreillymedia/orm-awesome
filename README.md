@@ -56,6 +56,10 @@
 ### K8s Tools
 
 - [Krew](https://krew.sigs.k8s.io): A `kubectl` plugin manager
+  - [cert-manager](https://cert-manager.io/docs/usage/kubectl-plugin/)
+  - [config-cleanup](https://github.com/B23admin/kubectl-config-cleanup)
+  - [deprecations](https://github.com/rikatz/kubepug)
+  - [get-all](https://github.com/corneliusweig/ketall)
 - [Stern](https://github.com/wercker/stern): Easy pod and container log viewer
 
 ### K8s Reference & Tips
