@@ -12,6 +12,18 @@
 
 ### CLI Reference & Tips
 
+Find your public IP address:
+
+```sh
+dig +short myip.opendns.com @resolver1.opendns.com
+```
+
+Lookup command examples:
+
+```sh
+curl -s cheat.sh/{{ command }}
+```
+
 ### CLI Tools
 
 - [gh](https://cli.github.com): GitHub CLI and API wrapper
@@ -43,6 +55,18 @@
 ## Docker
 
 **[`^        back to top        ^`](#)**
+
+### Docker Reference & Tips
+
+List container tags:
+
+```sh
+# from DockerHub:
+wget -q https://registry.hub.docker.com/v1/repositories/{{ container }}/tags -O - | jq -r '.[].name'
+
+# from GCR:
+gcloud container images list-tags gcr.io/{{ project }}/{{ container }}
+```
 
 ### Container Tools
 
@@ -95,3 +119,4 @@ code --diff <file1> <file2>
 ### Extensions
 
 - [markdownlinter](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): Markdown/CommonMark linting and style checking
+- [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck): Bash/Shell script linter
