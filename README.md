@@ -21,7 +21,7 @@ dig +short myip.opendns.com @resolver1.opendns.com
 Lookup command examples:
 
 ```sh
-curl -s cheat.sh/{{ command }}
+curl -s cheat.sh/<command>
 ```
 
 ### CLI Tools
@@ -62,10 +62,10 @@ List container tags:
 
 ```sh
 # from DockerHub:
-wget -q https://registry.hub.docker.com/v1/repositories/{{ container }}/tags -O - | jq -r '.[].name'
+wget -q https://registry.hub.docker.com/v1/repositories/<container>/tags -O - | jq -r '.[].name'
 
 # from GCR:
-gcloud container images list-tags gcr.io/{{ project }}/{{ container }}
+gcloud container images list-tags gcr.io/<project>/<container>
 ```
 
 ### Container Tools
@@ -92,7 +92,7 @@ An alternative for `kubectl get all` that returns ***all*** resources. Warning: 
 
 ```sh
 kubectl api-resources --verbs=list --namespaced --output name \
-    | xargs -n 1 kubectl get --show-kind --ignore-not-found --namespace {{ namespace }} --selector {{ label }}
+    | xargs -n 1 kubectl get --show-kind --ignore-not-found --namespace <namespace> --selector <label>
 ```
 
 ## Python
