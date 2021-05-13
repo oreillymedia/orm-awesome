@@ -30,6 +30,7 @@ curl -s cheat.sh/<command>
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
 - [Shellcheck](https://www.shellcheck.net/): Shell script linting
+- [Httpie](https://httpie.io/): Better cURL
 
 - Zsh Prompt/Config Managers:
   - [Oh My Zsh](https://ohmyz.sh): A framework for managing your Zsh configuration
