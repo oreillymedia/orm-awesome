@@ -26,6 +26,7 @@ curl -s cheat.sh/<command>
 
 ### CLI Tools
 
+- [exa](https://the.exa.website): modern `ls` replacement
 - [gh](https://cli.github.com): GitHub CLI and API wrapper
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
