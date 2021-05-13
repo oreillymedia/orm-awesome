@@ -6,6 +6,47 @@
 
 # O'Reilly Awesome List
 
+{% if include.skip_toc %}
+    {% assign content = include.content %}
+    {% assign h2_open_start = content | split: "<h2" %}
+    {% assign final_h2_texts = '' | split: '' %}
+    {% assign final_h2_ids = '' | split: '' %}
+
+    {% for h2_possible_open in h2_open_start %}
+        {% assign first_char = h2_possible_open | slice: 1,2 %}
+        {% if first_char == "id" %}
+            {% assign h2_text_start = h2_possible_open | split: ">" %}
+            {% assign h2_text = h2_text_start[1] | split: "</h2" | first %}
+            {% assign final_h2_texts = final_h2_texts | push: h2_text %}
+
+            {% assign h2_id = h2_text_start[0] | split: '"' | last %}
+            {% assign final_h2_ids = final_h2_ids | push: h2_id %}
+        {% endif %}
+    {% endfor %}
+
+    {% if final_h2_ids.size > 0 %}
+        <div id="table-of-content">
+            {% for h2_text in final_h2_texts %}
+                {% assign index = forloop.index | minus: 1 %}
+                <a href="#{{ final_h2_ids[index] }}">{{ forloop.index }}. {{ h2_text }}</a>
+                <br>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <style type="text/css">
+        div#table-of-content {
+            margin: 2em 0 !important;
+            padding: 1em;
+            color: #494e52;
+            font-size: .75em !important;
+            text-indent: initial;
+            background-color: #ecf6ec;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(63,166,63,0.25);
+        }
+    </style>
+{% endif %}
+
 ## Command Line
 
 **[`^        back to top        ^`](#)**
