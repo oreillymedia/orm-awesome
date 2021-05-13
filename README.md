@@ -84,6 +84,7 @@ gcloud container images list-tags gcr.io/{{ project }}/{{ container }}
   - [config-cleanup](https://github.com/B23admin/kubectl-config-cleanup)
   - [deprecations](https://github.com/rikatz/kubepug)
   - [get-all](https://github.com/corneliusweig/ketall)
+  - [ksniff](https://github.com/eldadru/ksniff)
 - [Stern](https://github.com/wercker/stern): Easy pod and container log viewer
 
 ### K8s Reference & Tips
