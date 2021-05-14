@@ -24,15 +24,17 @@ dig +short myip.opendns.com @resolver1.opendns.com
 Lookup command examples:
 
 ```sh
-curl -s cheat.sh/{{ command }}
+curl -s cheat.sh/<command>
 ```
 
 ### CLI Tools
 
+- [exa](https://the.exa.website): modern `ls` replacement
 - [gh](https://cli.github.com): GitHub CLI and API wrapper
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
 - [Shellcheck](https://www.shellcheck.net/): Shell script linting
+- [Httpie](https://httpie.io/): Better cURL
 
 - Zsh Prompt/Config Managers:
   - [Oh My Zsh](https://ohmyz.sh): A framework for managing your Zsh configuration
@@ -65,10 +67,10 @@ List container tags:
 
 ```sh
 # from DockerHub:
-wget -q https://registry.hub.docker.com/v1/repositories/{{ container }}/tags -O - | jq -r '.[].name'
+wget -q https://registry.hub.docker.com/v1/repositories/<container>/tags -O - | jq -r '.[].name'
 
 # from GCR:
-gcloud container images list-tags gcr.io/{{ project }}/{{ container }}
+gcloud container images list-tags gcr.io/<project>/<container>
 ```
 
 ### Container Tools
@@ -87,6 +89,7 @@ gcloud container images list-tags gcr.io/{{ project }}/{{ container }}
   - [config-cleanup](https://github.com/B23admin/kubectl-config-cleanup)
   - [deprecations](https://github.com/rikatz/kubepug)
   - [get-all](https://github.com/corneliusweig/ketall)
+  - [ksniff](https://github.com/eldadru/ksniff)
 - [Stern](https://github.com/wercker/stern): Easy pod and container log viewer
 
 ### K8s Reference & Tips
@@ -95,7 +98,7 @@ An alternative for `kubectl get all` that returns ***all*** resources. Warning: 
 
 ```sh
 kubectl api-resources --verbs=list --namespaced --output name \
-    | xargs -n 1 kubectl get --show-kind --ignore-not-found --namespace {{ namespace }} --selector {{ label }}
+    | xargs -n 1 kubectl get --show-kind --ignore-not-found --namespace <namespace> --selector <label>
 ```
 
 ## Python
