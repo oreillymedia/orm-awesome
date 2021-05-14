@@ -13,7 +13,6 @@ When adding to our list, keep in mind the following:
 
 - Find the best existing category for your addition, only add new sections if absolutely necessary
 - Keep lists alphabetical for ease-of-use
-- Use  to ensure best practices
 - When in doubt about formatting, follow existing examples
 
 *We strive to make our documents Markdown compliant using [`markdownlint-cli`](https://github.com/igorshubovych/markdownlint-cli); if you have the time and resources to verify your changes we appreciate it!*
