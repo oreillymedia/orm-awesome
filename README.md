@@ -1,10 +1,13 @@
 <!-- markdownlint-configure-file
 {
-  "no-empty-links": false
+  "no-empty-links": false,
+  "line-length": false
 }
 -->
 
 # O'Reilly Awesome List
+
+Read about [how to contribute](CONTRIBUTING.md) to this list!
 
 - TOC
 {:toc}
