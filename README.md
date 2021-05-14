@@ -6,7 +6,7 @@
 
 # O'Reilly Awesome List
 
-* TOC
+- TOC
 {:toc}
 
 ## Command Line
