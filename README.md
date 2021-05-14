@@ -1,10 +1,13 @@
 <!-- markdownlint-configure-file
 {
-  "no-empty-links": false
+  "no-empty-links": false,
+  "line-length": false
 }
 -->
 
 # O'Reilly Awesome List
+
+Read about [how to contribute](CONTRIBUTING.md) to this list!
 
 - TOC
 {:toc}
@@ -32,9 +35,9 @@ curl -s cheat.sh/<command>
 - [exa](https://the.exa.website): modern `ls` replacement
 - [gh](https://cli.github.com): GitHub CLI and API wrapper
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
+- [Httpie](https://httpie.io/): Better cURL
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
 - [Shellcheck](https://www.shellcheck.net/): Shell script linting
-- [Httpie](https://httpie.io/): Better cURL
 
 - Zsh Prompt/Config Managers:
   - [Oh My Zsh](https://ohmyz.sh): A framework for managing your Zsh configuration
