@@ -32,6 +32,7 @@ curl -s cheat.sh/<command>
 
 ### CLI Tools
 
+- [bat](https://github.com/sharkdp/bat): a `cat` clone with wings
 - [exa](https://the.exa.website): modern `ls` replacement
 - [gh](https://cli.github.com): GitHub CLI and API wrapper
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
