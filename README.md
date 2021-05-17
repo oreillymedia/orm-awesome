@@ -38,6 +38,8 @@ curl -s cheat.sh/<command>
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
 - [Httpie](https://httpie.io/): Better cURL
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
+- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep): Fast,
+  `.gitignore`-aware search tool
 - [Shellcheck](https://www.shellcheck.net/): Shell script linting
 
 - Zsh Prompt/Config Managers:
