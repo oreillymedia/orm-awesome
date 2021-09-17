@@ -38,8 +38,7 @@ curl -s cheat.sh/<command>
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
 - [Httpie](https://httpie.io/): Better cURL
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
-- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep): Fast,
-  `.gitignore`-aware search tool
+- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep): Fast, `.gitignore`-aware search tool
 - [Shellcheck](https://www.shellcheck.net/): Shell script linting
 
 - Zsh Prompt/Config Managers:
@@ -141,3 +140,14 @@ code --diff <file1> <file2>
 - [Console](https://console.substack.com/)
 - [The ReadME Project](https://github.com/readme)
 - [O'Reilly Newsletters](https://www.oreilly.com/emails/newsletters/)
+
+## Awesome Lists
+
+**[`^        back to top        ^`](#)**
+
+- [Awesome CLI](https://github.com/agarrharr/awesome-cli-apps)
+- [Awesome Docker](https://github.com/veggiemonk/awesome-docker)
+- [Awesome Python](https://github.com/vinta/awesome-python)
+- [F!%king Awesome Python](https://github.com/trananhkma/fucking-awesome-python)
+- [Awesome Shell](https://github.com/alebcay/awesome-shell)
+- [Awesome SysAdmin](https://github.com/kahun/awesome-sysadmin)
