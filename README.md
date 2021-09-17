@@ -132,6 +132,15 @@ code --diff <file1> <file2>
 - [markdownlinter](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): Markdown/CommonMark linting and style checking
 - [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck): Bash/Shell script linter
 
+## Newsletters & Blogs
+
+**[`^        back to top        ^`](#)**
+
+- [Julia Evans](https://jvns.ca/)
+- [Console](https://console.substack.com/)
+- [The ReadME Project](https://github.com/readme)
+- [O'Reilly Newsletters](https://www.oreilly.com/emails/newsletters/)
+
 ## Awesome Lists
 
 **[`^        back to top        ^`](#)**
