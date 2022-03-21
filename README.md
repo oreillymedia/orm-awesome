@@ -30,25 +30,35 @@ Lookup command examples:
 curl -s cheat.sh/<command>
 ```
 
+Zsh does not enable a builtin `help` command, instead it provides `run-help`. By default `run-help` is an alias to `man` and will only work on external commands. To use it for Zsh builtins and features, load and unalias the command in your `.zshrc`.
+
+```sh
+autoload -Uz run-help
+unalias run-help
+alias help=run-help # for convenience
+```
+
 ### CLI Tools
 
 - [bat](https://github.com/sharkdp/bat): a `cat` clone with wings
 - [exa](https://the.exa.website): modern `ls` replacement
+- [forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively
 - [gh](https://cli.github.com): GitHub CLI and API wrapper
 - [Glow](https://github.com/charmbracelet/glow): Renders markdown
 - [Httpie](https://httpie.io/): Better cURL
 - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
 - [ripgrep (rg)](https://github.com/BurntSushi/ripgrep): Fast, `.gitignore`-aware search tool
 - [Shellcheck](https://www.shellcheck.net/): Shell script linting
+- [yq](https://github.com/kislyuk/yq): jq wrapper for YAML/XML/TOML documents
 
 - Zsh Prompt/Config Managers:
   - [Oh My Zsh](https://ohmyz.sh): A framework for managing your Zsh configuration
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k): Performant and adaptable prompt generator
   - [Starship](https://starship.rs): Minimal and customizable prompt manager
 
-### Dotfile Collections
-
-- Brad: [vim](https://gist.github.com/bradleyfrank/2daa8dc057e58812643c9ec2f8d83156), [tmux](https://gist.github.com/bradleyfrank/575239da734aa7c8d9382a6afa576e4f), [zshrc](https://gist.github.com/bradleyfrank/8c2fc19c4d8b7a179c132ac937cc6728), [etc...](https://github.com/bradleyfrank/ansible)
+- Zsh Plugins:
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): syntax highlighting for Zsh
+  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): autosuggestions for zsh
 
 ## Git
 
