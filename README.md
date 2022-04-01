@@ -18,38 +18,73 @@ Read about [how to contribute](CONTRIBUTING.md) to this list!
 
 ### CLI Reference & Tips
 
-Find your public IP address:
+1. Find your public IP address:
 
-```sh
-dig +short myip.opendns.com @resolver1.opendns.com
-```
+    ```sh
+    dig +short myip.opendns.com @resolver1.opendns.com
+    ```
 
-Lookup command examples:
+2. Lookup command examples:
 
-```sh
-curl -s cheat.sh/<command>
-```
+    ```sh
+    curl -s cheat.sh/<command>
+    ```
 
-Zsh does not enable a builtin `help` command, instead it provides `run-help`. By default `run-help` is an alias to `man` and will only work on external commands. To use it for Zsh builtins and features, load and unalias the command in your `.zshrc`.
+3. Zsh does not enable a builtin `help` command, instead it provides `run-help`. By default `run-help` is an alias to `man` and will only work on external commands. To use it for Zsh builtins and features, load and unalias the command in your `.zshrc`.
 
-```sh
-autoload -Uz run-help
-unalias run-help
-alias help=run-help # for convenience
-```
+    ```sh
+    autoload -Uz run-help
+    unalias run-help
+    alias help=run-help # for convenience
+    ```
+
+4. To remove duplicate lines from unsorted data:
+
+    ```sh
+    echo "Apple\nOrange\nOrange \nBanana\nApple\nPineapple" > file1
+    awk '!a[$0]++' file1
+    Apple
+    Orange
+    Banana
+    Pineapple
+    ```
+
+5. To merge text files side-by-side:
+
+    ```sh
+    echo "HEADER1\nData-1\nData-2" > file1
+    echo "HEADER2\nValue-1\nValue-2" > file1
+
+    paste file1 file2
+    HEADER1 HEADER2
+    Data-1  Value-1
+    Date-2  Value-2
+    ```
 
 ### CLI Tools
 
-- [bat](https://github.com/sharkdp/bat): a `cat` clone with wings
-- [exa](https://the.exa.website): modern `ls` replacement
-- [forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively
-- [gh](https://cli.github.com): GitHub CLI and API wrapper
-- [Glow](https://github.com/charmbracelet/glow): Renders markdown
-- [Httpie](https://httpie.io/): Better cURL
-- [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
-- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep): Fast, `.gitignore`-aware search tool
-- [Shellcheck](https://www.shellcheck.net/): Shell script linting
-- [yq](https://github.com/kislyuk/yq): jq wrapper for YAML/XML/TOML documents
+- General Tools:
+  - [btop](https://github.com/aristocratos/btop): A monitor of resources
+  - [exa](https://the.exa.website): modern `ls` replacement
+  - [trash-cli](https://github.com/sindresorhus/trash-cli): Move files and folders to the trash
+  - [zoxide](https://github.com/ajeetdsouza/zoxide): A smarter cd command
+
+- Searching & Manipulating Data:
+  - [jq](https://stedolan.github.io/jq/): Formats and filters JSON data
+  - [ripgrep (rg)](https://github.com/BurntSushi/ripgrep): Fast, `.gitignore`-aware search tool
+  - [yq](https://github.com/kislyuk/yq): jq wrapper for YAML/XML/TOML documents
+
+- Scripting:
+  - [Shellcheck](https://www.shellcheck.net/): Shell script linting
+
+- Network/Internet Tools:
+  - [curlconverter](https://github.com/curlconverter/curlconverter): transpiles `curl` commands into programs in other programming languages
+  - [Httpie](https://httpie.io/): Better cURL
+
+- Text Presentation:
+  - [bat](https://github.com/sharkdp/bat): a `cat` clone with wings
+  - [Glow](https://github.com/charmbracelet/glow): Renders markdown
+  - [slides](https://github.com/maaslalani/slides): Terminal based presentation tool
 
 - Zsh Prompt/Config Managers:
   - [Oh My Zsh](https://ohmyz.sh): A framework for managing your Zsh configuration
@@ -71,6 +106,8 @@ alias help=run-help # for convenience
 ### Git Tools
 
 - [delta](https://github.com/dandavison/delta): GitHub style diffs
+- [forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively
+- [gh](https://cli.github.com): GitHub CLI and API wrapper
 
 ## Docker
 
